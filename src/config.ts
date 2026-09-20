@@ -1,6 +1,6 @@
 /** Everything that changes per release lives here. */
 export const config = {
-  version: '0.1.0',
+  version: '0.1.2',
   /** Our own server. GitHub's asset CDN stalls on some mobile networks here,
    *  and this is the same host the app already talks to. */
   apkUrl: 'https://srv1937487.hstgr.cloud/dl/kabtin.apk',

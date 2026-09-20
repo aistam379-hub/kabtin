@@ -260,6 +260,14 @@ export default function App() {
                   <Icon name="download" size={20} />
                   {hasApk ? `نزّل كابتن ${config.version}` : 'قريباً'}
                 </a>
+                {hasApk && config.apkMirrorUrl ? (
+                  <p className="muted" style={{ marginTop: 12, fontSize: 13, textAlign: 'center' }}>
+                    ما زبط التحميل؟{' '}
+                    <a href={config.apkMirrorUrl} style={{ textDecoration: 'underline' }}>
+                      جرّب الرابط البديل
+                    </a>
+                  </p>
+                ) : null}
               </SpotlightCard>
             </Reveal>
           </div>
